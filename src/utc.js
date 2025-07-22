@@ -14,5 +14,6 @@ const interval = setInterval(() => {
 }, 1000);
 
 setTimeout(() => {
+  clearInterval(interval);
   console.log("Interval cleared!");
 }, 5000);
