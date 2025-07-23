@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day.js Locale Example</title>
+  <!-- Day.js core -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <!-- German locale -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/de.js"></script>
+</head>
+<body>
+  <h2 id="output"></h2>
+
+  <script>
+    // Set German locale globally
+    dayjs.locale('de');
+
+    // Format current date
+    const date = dayjs().format('dddd, D MMMM YYYY');
+    document.getElementById('output').textContent = date;
+  </script>
+</body>
+</html>
