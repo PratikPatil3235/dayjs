@@ -61,6 +61,7 @@ const customLocale = {
 
 // Register the locale
 dayjs.locale(customLocale);
+console.log(dayjs.locale())
 
 const now = dayjs().locale("custom-en");
 
